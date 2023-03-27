@@ -4,13 +4,15 @@ import com.google.protobuf.Timestamp;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-
 @Data
 @AllArgsConstructor
-public class GoogleAnalyticsAccount {
+public class GoogleAnalytics4Property {
     private String name;
     private String displayName;
-    private String regionalCode;
-    private Timestamp createdTime;
-    private Timestamp updatedTime;
+    private String propertyId;
+    private String websiteUrl;
+    private Boolean ecommerceTracking;
+    private Timestamp createTime;
+    private Timestamp updateTime;
+
 }

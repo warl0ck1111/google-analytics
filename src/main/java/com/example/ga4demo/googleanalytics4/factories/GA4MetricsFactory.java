@@ -1,6 +1,5 @@
 package com.example.ga4demo.googleanalytics4.factories;
 
-import com.example.ga4demo.googleanalytics4.utils.Constants;
 import com.google.analytics.data.v1beta.Metric;
 import lombok.Getter;
 
@@ -8,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter
-public class MetricsFactory {
+public class GA4MetricsFactory {
     private final List<Metric> metrics;
 
-    public MetricsFactory(List<String> metricsAlias) {
+    public GA4MetricsFactory(List<String> metricsAlias) {
         this.metrics = new ArrayList<>();
         buildMetrics(metricsAlias);
     }

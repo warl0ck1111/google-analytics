@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.time.LocalDate;
 
 @Slf4j
-public enum GoogleAnalyticsSinceDateType {
+public enum GoogleAnalytics4SinceDateType {
     LAST_16_MONTHS("486daysAgo", 486),
     LAST_12_MONTHS("364daysAgo", 364),
     LAST_90_DAYS("89daysAgo", 89),
@@ -21,13 +21,13 @@ public enum GoogleAnalyticsSinceDateType {
     @Getter
     private final LocalDate localDate;
 
-    GoogleAnalyticsSinceDateType(String value, int daysAgo) {
+    GoogleAnalytics4SinceDateType(String value, int daysAgo) {
         this.value = value;
         this.daysAgo = daysAgo;
         this.localDate = getLocalDateFromDaysAgo(daysAgo);
     }
 
-    public static GoogleAnalyticsSinceDateType from(SinceDateType sinceDate) {
+    public static GoogleAnalytics4SinceDateType from(SinceDateType sinceDate) {
         switch (sinceDate) {
             case LAST_16_MONTHS:
                 return LAST_16_MONTHS;

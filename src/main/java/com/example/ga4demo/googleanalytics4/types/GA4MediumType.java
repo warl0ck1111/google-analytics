@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public enum MediumType {
+public enum GA4MediumType {
 
     DIRECT,
     ORGANIC,
@@ -15,7 +15,7 @@ public enum MediumType {
     OTHERS;
 
     @JsonIgnore
-    public static MediumType getMediumTypeFromString(String stringValue) {
+    public static GA4MediumType getMediumTypeFromString(String stringValue) {
         switch (stringValue) {
             case "(none)":
                 return DIRECT;
@@ -36,7 +36,7 @@ public enum MediumType {
         }
     }
 
-    public static String getStringValueFromMediumType(MediumType mediumType) {
+    public static String getStringValueFromMediumType(GA4MediumType mediumType) {
         switch (mediumType) {
             case DIRECT:
                 return "(none)";

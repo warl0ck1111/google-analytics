@@ -5,6 +5,6 @@ import lombok.Value;
 
 @EqualsAndHashCode(callSuper = true)
 @Value
-public class GAgetFailureException extends RuntimeException {
+public class GA4getFailureException extends RuntimeException {
     String message = "Google Analytics provider is unavailable. Unable to complete operation.";
 }

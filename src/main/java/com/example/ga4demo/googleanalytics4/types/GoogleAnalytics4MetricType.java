@@ -5,7 +5,7 @@ import lombok.Getter;
 import java.util.Arrays;
 import java.util.List;
 
-public enum GoogleAnalyticsMetricType {
+public enum GoogleAnalytics4MetricType {
     SESSIONS("sessions"),
     USERS("totalUsers"),
     NEW_USERS("newUsers"),
@@ -20,7 +20,7 @@ public enum GoogleAnalyticsMetricType {
     @Getter
     private final String value;
 
-    GoogleAnalyticsMetricType(String value) {
+    GoogleAnalytics4MetricType(String value) {
         this.value = value;
     }
 }
