@@ -1,8 +1,8 @@
 package com.example.ga4demo.googleanalytics4.utils;
 
 import com.google.common.collect.ImmutableList;
-import com.example.ga4demo.googleanalytics4.types.GA4MediumType;
-import com.example.ga4demo.googleanalytics4.types.GoogleAnalytics4MetricType;
+import com.example.ga4demo.googleanalytics4.core.types.GA4MediumType;
+import com.example.ga4demo.googleanalytics4.core.types.GoogleAnalytics4MetricType;
 
 import java.util.ArrayList;
 import java.util.List;

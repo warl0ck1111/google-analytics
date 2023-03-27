@@ -2,8 +2,8 @@ package com.example.ga4demo;
 
 import com.example.ga4demo.googleanalytics4.GoogleAnalytic4Service;
 import com.example.ga4demo.googleanalytics4.dto.GoogleAnalytics4Account;
-import com.example.ga4demo.googleanalytics4.types.GA4MediumType;
-import com.example.ga4demo.googleanalytics4.types.GoogleAnalytics4SinceDateType;
+import com.example.ga4demo.googleanalytics4.core.types.GA4MediumType;
+import com.example.ga4demo.googleanalytics4.core.types.GoogleAnalytics4SinceDateType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
